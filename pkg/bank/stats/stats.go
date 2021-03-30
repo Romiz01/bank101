@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/Romiz01/bank101/pkg/bank/types"
+	"github.com/Romiz01/bank101/bank/pkg/bank/types"
 	// "bank/pkg/bank/types"
 )
 
