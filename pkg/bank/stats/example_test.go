@@ -3,7 +3,6 @@ package stats
 import (
 	"fmt"
 
-	// " bank/pkg/bank/types"
 	"github.com/Romiz01/bank101/bank/pkg/bank/types"
 )
 
