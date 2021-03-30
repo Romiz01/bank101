@@ -26,7 +26,7 @@ func ExampleAvg() {
 		{
 			ID:       4,
 			Amount:   10_00,
-			Category: "Mobile",
+			Category: "Mobiles",
 		},
 	}
 	avg := Avg(payments)

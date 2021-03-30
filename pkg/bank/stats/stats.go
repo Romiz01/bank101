@@ -5,7 +5,7 @@ import (
 	// "bank/pkg/bank/types"
 )
 
-// Avg
+// Avg 1
 func Avg(payments []types.Payment) types.Money {
 	cPayments := types.Money(len(payments))
 	sPaymenys := types.Money(0)
@@ -16,7 +16,7 @@ func Avg(payments []types.Payment) types.Money {
 	return sPaymenys / cPayments
 }
 
-// TotalInCategory
+// TotalInCategory 2
 func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
 	PaySum := types.Money(0)
 	for _, payment := range payments {
