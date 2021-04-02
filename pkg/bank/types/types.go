@@ -8,6 +8,16 @@ type Money int64
 
 type Category string
 
+// Status представляет статуч плятежей.
+type Status string
+
+// Предопределеные статусы платежа.
+const (
+	StatusOk       Status = "OK"
+	StatusFail     Status = "FAIL"
+	StatusProgress Status = "INPROGRESS"
+)
+
 // Payment
 
 type Payment struct {
