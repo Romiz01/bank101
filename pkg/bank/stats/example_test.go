@@ -26,7 +26,7 @@ func ExampleAvg() {
 		{
 			ID:       4,
 			Amount:   10_00,
-			Category: "Mobile",
+			Category: "Mobiles",
 		},
 	}
 	avg := Avg(payments)
@@ -34,4 +34,25 @@ func ExampleAvg() {
 
 	// Output:
 	//3125
+}
+
+func ExampleTotalInCategory() {
+	payments := []types.Payment{
+		{
+			ID:       1,
+			Amount:   5_000_00,
+			Category: "Mobile",
+		},
+		{
+			ID:       2,
+			Amount:   10_000_00,
+			Category: "Cars",
+		},
+	}
+
+	CategoryTo := types.Category("Mobile")
+	TotalC := TotalInCategory(payments, CategoryTo)
+	fmt.Println(TotalC)
+	//Output:  500000
+
 }
